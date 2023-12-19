@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.title {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.main {
+  border: 3px solid #726d6d;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #ffffff;
+  width: 324px; /* Genişlik ayarı */
+}
+
+.name {
+  display: flex;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px;
+  color: #ffffff;
+  background-color: #726d6d;
+  border-bottom: 2px solid #726d6d;
+}
+
+.name > span {
+  color: #999999;
+  margin-right: 8px;
+}
+
+.name-input {
+  font-size: 14px;
+  font-weight: 700;
+  color: #333333;
+  flex-grow: 1;
+  border: none;
+  margin: 0 8px;
+  outline: none;
+  background-color: #726d6d;
+}
+
+.message-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #a5a2a2;
+  width: 320px; /* Genişlik ayarı */
+  height: 500px; /* Yükseklik ayarı */
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.message-left,
+.message-right {
+  list-style: none;
+  padding: 6px 10px;
+  margin: 8px;
+  max-width: 200px; /* Maksimum mesaj genişliği */
+  font-size: 14px;
+  word-wrap: break-word;
+}
+
+.message-left {
+  border-radius: 12px 12px 12px 0;
+  align-self: flex-start;
+  background-color: #d5cd58;
+  box-shadow: -2px 2px 4px #dc5a5a;
+}
+
+.message-right {
+  border-radius: 12px 12px 0 12px;
+  align-self: flex-end;
+  background-color: #126815;
+  box-shadow: 2px 2px 4px #329fa9;
+  color: #ffffff;
+}
+
+.message-left > p > span,
+.message-right > p > span {
+  display: block;
+  font-style: italic;
+  font-size: 10px;
+  margin-top: 2px;
+  color: #ffffff;
+}
+
+.feedback {
+  font-style: italic;
+  font-size: 12px;
+  padding: 12px;
+  color: #333333;
+  text-align: center;
+}
+
+.message-form {
+  display: flex;
+  justify-content: space-between;
+  width: 320px; /* Genişlik ayarı */
+  background-color: #983d3d;
+}
+
+.message-input {
+  flex-grow: 1;
+  height: 36px; /* Yükseklik ayarı */
+  font-size: 12px;
+  border: none;
+  outline: none;
+  padding: 0 8px;
+  background-color: #2a7357;
+}
+
+.send-button {
+  height: 36px; /* Yükseklik ayarı */
+  font-size: 12px;
+  border: none;
+  outline: none;
+  background-color: #4caf50;
+  color: #ffffff;
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+.v-divider {
+  height: 36px; /* Yükseklik ayarı */
+  width: 2px;
+  background-color: #dddddd;
+}
+
+.clients-total {
+  margin: 10px;
+  font-size: 12px;
+  color: #000000;
+  text-align: center;
+}
